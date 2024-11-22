@@ -18,20 +18,18 @@ function convertPokemonToLi(pokemon) {
         </li>
     `
 }
-fetch(url)
-    .then((response) => response.json()) // retorna uma promise
-    .then((jsonBody) => jsonBody.results) // retorna uma promise
-    .then((pokemonlist) => { 
 
-            for (let i = 0; i < pokemonlist.length; i++) {
+
+pokeApi.getPokemons()
+    .then((pokemonlist) => {
+        for (let i = 0; i < pokemonlist.length; i++) {
             const pokemon = pokemonlist[i];
-            console.log(pokemon.name)
             const pokemonLi = convertPokemonToLi(pokemon)
             document.getElementById('pokemonList').innerHTML += pokemonLi
         }
 
     })
-    .catch((error) => console.log(error)) // retorna uma promise
+    .catch((error) => console.log(error)) 
     
     
     
