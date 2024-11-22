@@ -1,6 +1,6 @@
 
 
-```markdown
+
 # Pokedex
 
 Este é um projeto de uma **Pokedex** desenvolvida com HTML, CSS e JavaScript. Ele exibe informações sobre os Pokémon, incluindo nome, tipo e GIF animado. O projeto utiliza uma API para obter os dados dos Pokémon e exibe suas informações em uma interface simples e responsiva.
@@ -27,7 +27,7 @@ Neste projeto, foram utilizadas as seguintes tecnologias:
 
 A estrutura do projeto é a seguinte:
 
-```
+```bash
 .
 ├── assets
 │   ├── css
